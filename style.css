@@ -1,0 +1,427 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #2a2f33;
+    background: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.first::after, .features::after, .history::after, .who .card::after, .partners::after,
+.newsletter .row::after, .footer .cols::after { 
+    content:""; 
+    display:block; 
+    clear:both; 
+}
+
+header nav ul,
+.first, .second, .features, .history, .who, .partners,
+.newsletter .row, .footer .cols, .footer .links, .foot-copy {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1,h2,h3 { 
+    margin: 0 0 12px; 
+    line-height: 1.2; 
+}
+h1 { 
+    font-size: 30px; 
+}
+h2 { 
+    font-size: 24px; 
+    text-align: center; 
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h3 { 
+    font-size: 18px; 
+}
+
+a { 
+    color: #2a2f33; 
+    text-decoration: none; 
+}
+.input, .btn {
+  height: 36px; 
+  padding: 0 10px; 
+  font-size: 14px;
+  border: 1px solid #c7cdd3; 
+  border-radius: 4px;
+}
+.input { 
+    background: #fff; 
+}
+.btn { 
+    background: #c6d0da; 
+}
+
+/*sHeader*/
+header { 
+    border-bottom: 1px solid #e5eaef; 
+    background: white;
+    padding-bottom: 20px;
+}
+header nav ul { 
+    list-style: none; 
+    padding: 10px 0; 
+
+}
+header nav ul>li{
+    margin-left: 20px;
+}
+header nav ul li { 
+    float: left; 
+    margin-right: 90px; 
+}
+header nav ul li:last-child { 
+    float: right; 
+    margin-right: 0; 
+}
+.apply {
+    background: #2d2f33; 
+    color: white; 
+    padding: 6px 14px; 
+}
+
+.first {
+  background: #e7ecf0;
+  border-bottom: 1px solid #dde4ea;
+  padding: 28px 0 22px;
+}
+
+.first .left { 
+    float: left;
+    width: 56%; 
+    margin-left: 25px;
+}
+.left .logo{
+    margin-left: 200px;
+}
+.first .right { 
+    float: right; 
+    width: 38%; 
+    margin-right: 28px;
+}
+
+.first .logo { 
+    width: 220px; 
+    height: 80px; 
+    background: #cbd4dc; 
+    border-radius: 4px; 
+    margin-bottom: 14px; 
+}
+
+.first .silhouette { 
+    width: 100%; 
+    height: 280px; 
+    background: #87939d; 
+   
+}
+
+.first .jap { 
+    color: #6c737a; 
+    margin-bottom: 10px; 
+}
+.first .hey  { 
+    color: #808890; 
+    margin: 6px 0 10px; 
+}
+.first .email .input { 
+    width: 240px; 
+    margin-right: 8px; 
+}
+
+/*next session*/
+.second { 
+    padding: 34px 0; 
+}
+.second h2 { 
+    font-size: 22px; 
+    font-weight: 700; 
+    text-align: center;
+}
+
+/* pink borders */
+.features { 
+    padding: 10px 0 34px; 
+    border-bottom: 1px solid #eef2f5; 
+}
+.features .col{ 
+    float: left; 
+    width: 48%; 
+    border-top: 2px solid #f3c9d6;
+    border-radius: 4px;
+    border-width: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.features .rel { 
+    float: right;
+    width: 48%;
+    border-top: 2px solid #f3c9d6;
+    border-radius: 4px;
+    border-width: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.features .note p{
+    text-align: center;
+}
+.features span { 
+    font-weight: 700; 
+}
+.features .note {
+    text-align: center; 
+    color: #8e97a0; 
+    font-style: italic;
+    margin-top: 18px;
+}
+
+/*section3*/
+.history {
+    background: #f5f7f9; 
+    border-top: 1px solid #eef2f5; 
+    border-bottom: 1px solid #eef2f5;
+    padding: 30px 0;
+    padding-left: 15px;
+}
+.history h2 { 
+    text-align: left; 
+    margin-left: -1px;
+    margin-bottom: 18px; 
+}
+.history .left { 
+    float: left; 
+    width: 58%; 
+}
+.history .right { 
+    float: right; 
+    width: 36%; 
+    text-align: center; 
+}
+
+.history .photo { 
+    width: 100%; 
+    height: 220px; 
+    background: #cbd4dc; 
+    border: 1px solid #dde3e8; 
+    border-radius: 4px; }
+.history .photo + .caption { 
+    margin-bottom: 12px; 
+}
+.history .caption { 
+    color: #8a9199; 
+    font-size: 13px; 
+    font-style: italic; 
+    margin: 6px 0 18px; 
+}
+
+
+/*Who We Are*/
+.who { 
+    padding: 36px 0 10px; 
+}
+.who .card {
+  border: 1px solid #e4e9ed; 
+  border-radius: 4px; 
+  background: #fff;
+  padding: 20px; 
+  margin-top: 14px;
+}
+.who .pic { 
+    float: left; 
+    width: 27%; 
+    height: 220px; 
+    background: #d6dee6; 
+    border-radius: 3px; 
+}
+.who .bio { 
+    float: right; 
+    width: 70%; 
+}
+.who h2 { 
+    margin-bottom: 6px; 
+}
+
+/*Partners */
+.partners { 
+    padding: 28px 0; 
+}
+.partners .part1 { 
+    float: left; 
+    width: 48%; 
+}
+.partners .part2 { 
+    float: right; 
+    width: 48%; 
+}
+.partners .part1 h3{
+    color:rgb(155, 149, 149);
+}
+.partners .logo { 
+    width: 220px; 
+    height: 40px; 
+    background: #d6dee6; 
+    margin: 6px 0 10px; 
+    border-radius: 3px; 
+}
+
+/* ============ Newsletter band ============ */
+.newsletter { 
+    background: #d7dee5; 
+    border-top: 1px solid #cfd6dc; 
+    border-bottom: 1px solid #cfd6dc; 
+    padding: 16px 0; 
+    padding-left: 50px;
+    padding-right: 300px;
+}
+.newsletter .label { 
+    float: left; 
+    padding-top: 8px; 
+    font-weight: 600; 
+    color: #5b626a; 
+}
+.newsletter .form  { 
+    float: right; 
+}
+.newsletter .input { 
+    width: 280px; 
+    margin-right: 8px; 
+}
+.newsletter .btn   { 
+    background: #aeb8c3; 
+}
+.newsletter .label{
+    color: white;
+    font-weight: 500;
+}
+
+.input{
+    color: rgb(185, 174, 174);
+
+}
+.btn{
+    color: white;
+}
+
+/*Footer */
+.footer { 
+    background: #a2a5ac; 
+    color: #6b7076; 
+    padding: 14px 0 26px; 
+    border-top: 1px solid #dde5ec; 
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.foot-copy{ 
+    float: left;
+    font-size: 13px; 
+    padding: 6px 0 10px; 
+    color: white;
+    margin-top: 10px;
+}
+.footer .links { 
+    padding: 4px 0 8px; 
+}
+.footer .links a { 
+    margin-right: 18px; 
+    color: white; 
+    float: right;
+    margin-top: -18px;
+}
+
+.footer .cols {
+    padding-bottom: 20px;
+}
+.foot-copy{
+    border-bottom: 1px solid white;
+}
+.cols{
+    padding-top: 20px;
+}
+.footer .cols .title{
+    color: white;
+    font-weight:600;
+    padding-top: 10px;
+}
+.footer .cols > div { 
+    float: left; 
+    width: 16.66%; 
+}
+.footer .cols h4 { 
+    margin: 4px 0 8px; 
+    font-size: 14px; 
+    color:#2a2f33; 
+}
+.footer .cols a { 
+    display: block; 
+    font-size: 13px; 
+    margin: 4px 0; 
+    color: lightgray; 
+
+}
+.footer .cols .g { 
+    clear: both;
+    float: right; 
+    width: auto; 
+    padding-top: 22px; 
+    font-size: 14px; 
+    color: white;
+}
+
+/* Small-screen and samsung tablets (portrait)*/
+@media (max-width: 767.98px){
+    .first .left, .first .right, .features .col, .features .rel, 
+    .history .left, .history .right, .who .pic, .who .bio,
+    .partners .part1, .partners .part2, .newsletter .label,
+    .newsletter .form, .footer .links a, header nav ul li, header nav .apply,
+    .footer .cols > div, .foot-copy { 
+        float: none; 
+        width: 100%; 
+    }
+    header .apply{
+        padding-top: 1px;
+    }
+    .first{
+        margin: 0;
+    }
+   header nav ul li{
+    margin-left: -2px;
+   }
+    .first .right{ 
+        margin-top: 16px; 
+    }
+    .first .left .logo{
+        margin-left: -8px;
+    }
+    .second h2{
+        font-size: 16px;
+        padding: 0 15px;
+        text-align: left; 
+        margin: 0;
+        
+    }
+    .foot-copy{
+        border: none;
+    }
+    .who h2{
+        margin: 0;
+    }
+    .who .bio{ 
+        margin-top: 12px; 
+    }
+    .newsletter .label{ 
+        margin-bottom: 10px; 
+    }
+    .footer .cols > div{ 
+        margin-bottom: 12px; 
+    }
+    .footer .cols .g{ 
+        float:none; padding-top:0 
+    }
+}
